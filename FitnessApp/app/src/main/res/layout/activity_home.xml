@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:backgroundTintMode="src_atop"
+    android:backgroundTint="#56424242"
+    >
+    <Button
+        android:id="@+id/menu"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5sp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/ic_menu_black_24dp"
+        android:backgroundTint="@color/colorAccent"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:layout_centerHorizontal="true"
+        android:text="Home"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:id="@+id/profile"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="1dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/ic_person_black_24dp"
+        android:backgroundTint="@color/colorAccent"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+    <ScrollView
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="100sp"
+                />
+
+            <Button
+                android:id="@+id/chestbtn"
+                android:layout_width="320sp"
+                android:layout_height="130sp"
+                android:background="@drawable/chestpic"
+                android:fontFamily="serif"
+                android:text="Chest Workouts"
+                android:textColor="#FFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:backgroundTintMode="src_atop"
+                android:backgroundTint="#90232323"
+                />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="25sp"/>
+
+            <Button
+                android:id="@+id/legsbtn"
+                android:layout_width="320sp"
+                android:layout_height="130sp"
+                android:background="@drawable/squat"
+                android:fontFamily="serif"
+                android:text="Legs Workouts"
+                android:textColor="#FFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:backgroundTintMode="src_atop"
+                android:backgroundTint="#90232323"
+                />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="25sp"/>
+
+            <Button
+                android:id="@+id/absbtn"
+                android:layout_width="320sp"
+                android:layout_height="130sp"
+                android:background="@drawable/sixpac"
+                android:fontFamily="serif"
+                android:text="Abs Workouts"
+                android:textColor="#FFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:backgroundTintMode="src_atop"
+                android:backgroundTint="#90232323"
+                />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="25sp"/>
+
+            <Button
+                android:id="@+id/backbtn"
+                android:layout_width="320sp"
+                android:layout_height="130sp"
+                android:background="@drawable/back3"
+                android:fontFamily="serif"
+                android:text="Back Workouts"
+                android:textColor="#FFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:backgroundTintMode="src_atop"
+                android:backgroundTint="#90232323"
+                />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="25sp"/>
+
+            <Button
+                android:id="@+id/shoulderbtn"
+                android:layout_width="320sp"
+                android:layout_height="130sp"
+                android:background="@drawable/builder"
+                android:fontFamily="serif"
+                android:text="Shoulder Workouts"
+                android:textColor="#FFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:backgroundTintMode="src_atop"
+                android:backgroundTint="#90232323"
+                />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="25sp"/>
+
+            <Button
+                android:id="@+id/tricepsrbtn"
+                android:layout_width="320sp"
+                android:layout_height="130sp"
+                android:background="@drawable/lifting"
+                android:fontFamily="serif"
+                android:text="Triceps Workouts"
+                android:textColor="#FFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:backgroundTintMode="src_atop"
+                android:backgroundTint="#90232323"
+                />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="25sp"/>
+
+            <Button
+                android:id="@+id/bicepsbtn"
+                android:layout_width="320sp"
+                android:layout_height="130sp"
+                android:background="@drawable/sixpac"
+                android:fontFamily="serif"
+                android:text="Biceps Workouts"
+                android:textColor="#FFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:backgroundTintMode="src_atop"
+                android:backgroundTint="#90232323"
+                />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="60sp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

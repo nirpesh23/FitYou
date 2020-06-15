@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@drawable/working"
+    android:padding="20dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:src="@drawable/profile3"
+        android:layout_width="75dp"
+        android:layout_height="75dp"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="John Doe"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:layout_marginTop="8dp"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JohnDoe@heraldcollege.edu.np"
+        android:textColor="#ffffff"/>
+</LinearLayout>

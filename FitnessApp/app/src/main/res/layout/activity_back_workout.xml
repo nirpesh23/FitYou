@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/cardview_dark_background">
+    <Button
+        android:id="@+id/menu"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="15sp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/ic_menu_black_24dp"
+        android:backgroundTint="@color/colorAccent" />
+    <FrameLayout
+        android:id="@+id/fragment_container_chest_workout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/bottom_nav_of_yourgoal"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FAFBFB"
+        app:menu="@menu/bottom_nav"
+        android:id="@+id/bottom_nav_of_yourgoal"/>
+
+    <TextView
+        android:id="@+id/you_goal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your goal"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textColor="@color/cardview_light_background"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/profile"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/ic_person_black_24dp"
+        android:backgroundTint="@color/colorAccent"
+        />
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/you_goal"/>
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Sunday"-->
+    <!--        android:textSize="20sp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        android:paddingTop="15dp"-->
+    <!--        android:padding="10dp"-->
+    <!--        android:layout_above="@+id/you_goal"/>-->
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/space">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/chest_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="First Day"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/cardview_light_background"
+                    android:padding="10dp"/>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="162dp"
+                            android:layout_height="100dp"
+                            android:padding="1dp"
+                            android:src="@drawable/chest_squeeze_pushup" />
+
+                        <ImageView
+                            android:layout_width="162dp"
+                            android:layout_height="100dp"
+                            android:padding="1dp"
+                            android:src="@drawable/dumbell_squeeze_press" />
+
+                        <ImageView
+                            android:layout_width="162dp"
+                            android:layout_height="100dp"
+                            android:padding="1dp"
+                            android:src="@drawable/chest1" />
+                        <ImageView
+                            android:layout_width="162dp"
+                            android:layout_height="100dp"
+                            android:padding="1dp"
+                            android:src="@drawable/chest_squeeze_pushup" />
+                        <ImageView
+                            android:layout_width="162dp"
+                            android:layout_height="100dp"
+                            android:padding="1dp"
+                            android:src="@drawable/cable_fly" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/abs_day"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/chest_day">
+
+                <TextView
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Second Day"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/cardview_light_background"
+                    android:padding="10dp"/>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="162dp"
+                            android:layout_height="100dp"
+                            android:padding="1dp"
+                            android:src="@drawable/dumbell_squeeze_press" />
+
+                        <ImageView
+                            android:layout_width="162dp"
+                            android:layout_height="100dp"
+                            android:padding="1dp"
+                            android:src="@drawable/cable_fly" />
+
+                        <ImageView
+                            android:layout_width="162dp"
+                            android:layout_height="100dp"
+                            android:padding="1dp"
+                            android:src="@drawable/close_grip" />
+                        <ImageView
+                            android:layout_width="162dp"
+                            android:layout_height="100dp"
+                            android:padding="1dp"
+                            android:src="@drawable/builder" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/legs_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/abs_day"
+                android:layout_marginTop="30sp">
+
+                <TextView
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Third Day"
+                    android:textColor="@color/cardview_light_background"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:padding="10dp"/>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="162dp"
+                            android:layout_height="100dp"
+                            android:padding="1dp"
+                            android:src="@drawable/sixpack3" />
+
+                        <ImageView
+                            android:layout_width="162dp"
+                            android:layout_height="100dp"
+                            android:padding="1dp"
+                            android:src="@drawable/chest_squeeze_pushup" />
+
+                        <ImageView
+                            android:layout_width="162dp"
+                            android:layout_height="96dp"
+                            android:padding="1dp"
+                            android:src="@drawable/chest2" />
+
+                        <ImageView
+                            android:layout_width="162dp"
+                            android:layout_height="96dp"
+                            android:padding="1dp"
+                            android:src="@drawable/chest1" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/back_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/legs_day"
+                android:layout_marginTop="30sp">
+
+                <TextView
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fourth Day"
+                    android:textStyle="bold"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="18sp"
+                    android:padding="10dp"/>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="162dp"
+                            android:layout_height="96dp"
+                            android:padding="1dp"
+                            android:src="@drawable/chest1" />
+
+                        <ImageView
+                            android:layout_width="162dp"
+                            android:layout_height="96dp"
+                            android:padding="1dp"
+                            android:src="@drawable/chest2" />
+
+                        <ImageView
+                            android:layout_width="162dp"
+                            android:layout_height="96dp"
+                            android:padding="1dp"
+                            android:src="@drawable/chest1" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/arms_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/back_day"
+                android:layout_marginTop="30sp">
+
+                <TextView
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fifth Day"
+                    android:textColor="@color/cardview_light_background"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:padding="10dp"/>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="162dp"
+                            android:layout_height="100dp"
+                            android:padding="1dp"
+                            android:src="@drawable/close_grip" />
+
+                        <ImageView
+                            android:layout_width="162dp"
+                            android:layout_height="100dp"
+                            android:padding="1dp"
+                            android:src="@drawable/cable_fly" />
+
+                        <ImageView
+                            android:layout_width="162dp"
+                            android:layout_height="100dp"
+                            android:padding="1dp"
+                            android:src="@drawable/pullup" />
+                        <ImageView
+                            android:layout_width="162dp"
+                            android:layout_height="100dp"
+                            android:padding="1dp"
+                            android:src="@drawable/weighted_pushup" />
+                        <ImageView
+                            android:layout_width="162dp"
+                            android:layout_height="100dp"
+                            android:padding="1dp"
+                            android:src="@drawable/chest_squeeze_pushup" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <Space
+                android:layout_below="@+id/arms_day"
+                android:layout_width="match_parent"
+                android:layout_height="70sp"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

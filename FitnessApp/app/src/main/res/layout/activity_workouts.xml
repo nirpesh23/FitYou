@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_workouts">
+
+    <Button
+        android:id="@+id/menu"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/ic_menu_black_24dp"
+        android:backgroundTint="@color/colorAccent" />
+    <TextView
+        android:id="@+id/you_goal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Workouts"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:layout_marginTop="21sp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/profile"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/ic_person_black_24dp"
+        android:backgroundTint="@color/colorAccent"
+        />
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/you_goal"/>
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Sunday"-->
+    <!--        android:textSize="20sp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        android:paddingTop="15dp"-->
+    <!--        android:padding="10dp"-->
+    <!--        android:layout_above="@+id/you_goal"/>-->
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/space">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/information_about_chest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Best exercises to pump up your chest"
+                    android:fontFamily="serif"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"/>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dumbbell Squeeze Press"
+                    android:fontFamily="serif"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"/>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20sp"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:background="@color/cardview_dark_background"
+                    android:layout_height="160sp"
+                    android:src="@drawable/dumbell_squeeze_press"/>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="15sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="Squeezing the weights together during a chest press shifts all the stress onto your pectorals. This simple tweak engages them throughout the entire range of motion, which is a key factor in maximizing muscle growth.
+Do it: Lie on a bench holding a pair of dumbbells with your arms straight above your chest, palms facing together. "
+                    android:textAlignment="center"
+                    android:textSize="15sp" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="30sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Incline Dumbbell Bench Press"
+                    android:fontFamily="serif"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"/>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20sp"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:background="@color/cardview_dark_background"
+                    android:layout_height="160sp"
+                    android:src="@drawable/inclined_dumbell_press"/>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="15sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="Lie on a bench with the backrest set at a 45-degree incline. Hold a pair of dumbbells above your chest with your arms straight and your palms turned toward your feet. Lower the dumbbells to chest level, and then press them back up to the starting position"
+                    android:textAlignment="center"
+                    android:textSize="15sp" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="30sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Weighted Pushup"
+                    android:fontFamily="serif"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"/>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20sp"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:background="@color/cardview_dark_background"
+                    android:layout_height="160sp"
+                    android:src="@drawable/weighted_pushup"/>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="15sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="Adding weight to the classic exercise forces your muscles to work harder and keeps your rep range low enough that you’ll pack on serious muscle, Jason Hartman, C.S.C.S., a trainer for the U.S. Special Forces. Add load in the form of a plate, weight vest, or sandbag thrown over your back."
+                    android:textAlignment="center"
+                    android:textSize="15sp" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="30sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Close-Grip Bench Press"
+                    android:fontFamily="serif"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"/>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20sp"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:background="@color/cardview_dark_background"
+                    android:layout_height="160sp"
+                    android:src="@drawable/close_grip"/>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="15sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="You can lift more weight with a barbell than with dumbbells because they’re more stable. That’s why barbell presses generally build more raw strength in your chest. To protect your shoulders, strength coach Bret Contreras, C.S.C.S., recommends using a close grip—that is, placing your hands just outside of shoulder width.
+“This is the most joint-friendly barbell variation of the bench press, allowing people with shoulder issues to still reap the benefits of pressing,” Contreras says.
+Do it: Using an overhand grip that’s a bit narrower than shoulder width, hold a barbell above your sternum with your arms straight. Lower the bar to your chest. Hold for 1 second. Press the bar up."
+                    android:textAlignment="center"
+                    android:textSize="15sp" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="30sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Chest Squeeze Pushup"
+                    android:fontFamily="serif"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"/>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20sp"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:background="@color/cardview_dark_background"
+                    android:layout_height="160sp"
+                    android:src="@drawable/chest_squeeze_pushup"/>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="15sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="Do it: Place two dumbbells next to each other so that they’re touching with the handles are parallel to each other. Assume a standard pushup position, grabbing a dumbbell handle with each hand. Your arms should be straight and your body should form a straight line from your ankles to your head. Forcefully press the weights together, and lower your body until your chest nearly touches the dumbbells. Push your body back up and repeat, but don’t stop “squeezing” the dumbbells together."
+                    android:textAlignment="center"
+                    android:textSize="15sp" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="30sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cable Fly"
+                    android:fontFamily="serif"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"/>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20sp"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:background="@color/cardview_dark_background"
+                    android:layout_height="160sp"
+                    android:src="@drawable/cable_fly"/>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="15sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="When it comes to working their pecs, most guys just press. Adding the fly to your routine gives your pecs and front deltoids a new stimulus.Do it: Attach two stirrup handles to the high-pulley cables of a cable-crossover station. Grab a handle with each hand, and stand in a staggered stance in the middle of the station. Your arms should be outstretched but slightly bent. Lean forward slightly at your hips; don’t round your back. Without changing the bend in your arms, bring your hands together. Slowly reverse the movement"
+                    android:textAlignment="center"
+                    android:textSize="15sp" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@+id/information_about_chest"
+                android:id="@+id/chest_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Personalized workouts for you"
+                    android:fontFamily="serif"
+                    android:textSize="20sp"
+                    android:textAlignment="center"/>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="30sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Day 1"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:textAlignment="center"/>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="162dp"
+                            android:layout_height="100dp"
+                            android:padding="1dp"
+                            android:src="@drawable/dumbell_squeeze_press" />
+
+                        <ImageView
+                            android:layout_width="162dp"
+                            android:layout_height="100dp"
+                            android:padding="1dp"
+                            android:src="@drawable/cable_fly" />
+
+                        <ImageView
+                            android:layout_width="162dp"
+                            android:layout_height="100dp"
+                            android:padding="1dp"
+                            android:src="@drawable/close_grip" />
+                        <ImageView
+                            android:layout_width="162dp"
+                            android:layout_height="100dp"
+                            android:padding="1dp"
+                            android:src="@drawable/builder" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/abs_day"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/chest_day">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Day 2"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:textAlignment="center"/>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="162dp"
+                            android:layout_height="100dp"
+                            android:padding="1dp"
+                            android:src="@drawable/sixpack3" />
+
+                        <ImageView
+                            android:layout_width="162dp"
+                            android:layout_height="100dp"
+                            android:padding="1dp"
+                            android:src="@drawable/chest_squeeze_pushup" />
+
+                        <ImageView
+                            android:layout_width="162dp"
+                            android:layout_height="96dp"
+                            android:padding="1dp"
+                            android:src="@drawable/chest2" />
+
+                        <ImageView
+                            android:layout_width="162dp"
+                            android:layout_height="96dp"
+                            android:padding="1dp"
+                            android:src="@drawable/chest1" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/legs_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/abs_day"
+                android:layout_marginTop="30sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Day 3"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:textAlignment="center"/>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="162dp"
+                            android:layout_height="96dp"
+                            android:padding="10dp"
+                            android:src="@drawable/chest1" />
+
+                        <ImageView
+                            android:layout_width="162dp"
+                            android:layout_height="96dp"
+                            android:padding="10dp"
+                            android:src="@drawable/chest2" />
+
+                        <ImageView
+                            android:layout_width="162dp"
+                            android:layout_height="96dp"
+                            android:padding="10dp"
+                            android:src="@drawable/chest1" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/back_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/legs_day"
+                android:layout_marginTop="30sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Day 4"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:textAlignment="center"/>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="162dp"
+                            android:layout_height="96dp"
+                            android:padding="10dp"
+                            android:src="@drawable/chest1"/>
+
+                        <ImageView
+                            android:layout_width="162dp"
+                            android:layout_height="96dp"
+                            android:padding="10dp"
+                            android:src="@drawable/chest2" />
+
+                        <ImageView
+                            android:layout_width="162dp"
+                            android:layout_height="96dp"
+                            android:padding="10dp"
+                            android:src="@drawable/chest1" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/arms_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/back_day"
+                android:layout_marginTop="30sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Day 5"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:textAlignment="center"/>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="162dp"
+                            android:layout_height="100dp"
+                            android:padding="1dp"
+                            android:src="@drawable/chest_squeeze_pushup" />
+
+                        <ImageView
+                            android:layout_width="162dp"
+                            android:layout_height="100dp"
+                            android:padding="1dp"
+                            android:src="@drawable/dumbell_squeeze_press" />
+
+                        <ImageView
+                            android:layout_width="162dp"
+                            android:layout_height="100dp"
+                            android:padding="1dp"
+                            android:src="@drawable/chest1" />
+                        <ImageView
+                            android:layout_width="162dp"
+                            android:layout_height="100dp"
+                            android:padding="1dp"
+                            android:src="@drawable/chest_squeeze_pushup" />
+                        <ImageView
+                            android:layout_width="162dp"
+                            android:layout_height="100dp"
+                            android:padding="1dp"
+                            android:src="@drawable/cable_fly" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <Space
+                android:layout_below="@+id/arms_day"
+                android:layout_width="match_parent"
+                android:layout_height="70sp"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
